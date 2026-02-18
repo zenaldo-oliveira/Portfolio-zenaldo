@@ -28,6 +28,7 @@ body {
   --bg-secondary: #111827;
   --text-secondary: #94a3b8;
   --accent: #38bdf8;
+  --accent-gradient: linear-gradient(90deg, #38bdf8, #6366f1);
 }
 
 /* =============================
@@ -850,15 +851,34 @@ body {
 
 /* RESPONSIVO */
 
-@media (max-width: 1000px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
   }
-}
 
-@media (max-width: 700px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    padding: 20px 0;
+  }
+
+  .sidebar-inner {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 40px 20px;
   }
 }
 
@@ -941,4 +961,18 @@ body {
   margin-top: 20px;
   color: #22c55e;
   font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-thumb {
+    height: 180px;
+  }
 }
