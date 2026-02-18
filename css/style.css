@@ -28,7 +28,6 @@ body {
   --bg-secondary: #111827;
   --text-secondary: #94a3b8;
   --accent: #38bdf8;
-  --accent-gradient: linear-gradient(90deg, #38bdf8, #6366f1);
 }
 
 /* =============================
@@ -73,12 +72,10 @@ body {
 }
 
 .sidebar-avatar {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
-  margin-bottom: 15px;
-  border: 2px solid var(--accent);
+  border-radius: 50%;
 }
 
 .sidebar-name {
@@ -369,14 +366,19 @@ body {
 
 @media (max-width: 900px) {
   .sidebar {
-    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
 
   .content {
     margin-left: 0;
-    padding: 60px 30px;
+    padding: 40px 20px;
   }
 }
+
 /* =============================
    ABOUT COMPLETO PROFISSIONAL
 ============================= */
