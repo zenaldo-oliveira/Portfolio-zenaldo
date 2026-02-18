@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenaldo Oliveira | Frontend React</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <!-- ================= SIDEBAR ================= -->
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <div class="sidebar-top">
+            <img
+              src="assets/profile.jpg"
+              alt="Zenaldo"
+              class="sidebar-avatar"
+            />
+            <h3 class="sidebar-name">Zenaldo Oliveira</h3>
+            <span class="sidebar-role">Frontend React</span>
+          </div>
+
+          <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+          </nav>
+
+          <div class="sidebar-footer">
+            <p>© 2026 Zenaldo</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ================= CONTEÚDO ================= -->
+      <main class="content">
+        <!-- HERO -->
+        <section id="home" class="hero">
+          <div class="hero-left">
+            <h1>
+              Transformo ideias em
+              <span>produtos digitais escaláveis</span>
+            </h1>
+
+            <p>
+              Desenvolvedor Frontend especializado em React, focado em
+              performance, arquitetura limpa e experiência moderna.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projetos" class="btn-primary">Ver Projetos</a>
+              <a href="#contato" class="btn-outline">Falar Comigo</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-graph">
+              <div class="graph-header">
+                <div>
+                  <span class="graph-label">Crescimento</span>
+                  <strong class="graph-big">+42%</strong>
+                </div>
+                <div class="graph-mini">
+                  <span>Usuários</span>
+                  <strong>1.245</strong>
+                </div>
+              </div>
+
+              <svg viewBox="0 0 800 350" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#38bdf8" />
+                    <stop offset="100%" stop-color="#6366f1" />
+                  </linearGradient>
+
+                  <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
+                    <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Área -->
+                <path
+                  d="M0 280
+           C80 240, 140 200, 200 220
+           S320 300, 400 200
+           S520 140, 600 180
+           S700 260, 800 120
+           L800 350 L0 350 Z"
+                  fill="url(#areaGradient)"
+                />
+
+                <!-- Linha -->
+                <path
+                  d="M0 280
+           C80 240, 140 200, 200 220
+           S320 300, 400 200
+           S520 140, 600 180
+           S700 260, 800 120"
+                  class="graph-line"
+                />
+
+                <!-- Pontos -->
+                <circle cx="200" cy="220" r="6" class="graph-point" />
+                <circle cx="400" cy="200" r="6" class="graph-point" />
+                <circle cx="600" cy="180" r="6" class="graph-point" />
+                <circle cx="800" cy="120" r="6" class="graph-point" />
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="about">
+          <div class="about-wrapper">
+            <!-- CABEÇALHO -->
+            <div class="about-header">
+              <span class="section-badge">Sobre mim</span>
+              <h2>
+                Construindo produtos digitais com
+                <span>arquitetura, performance e visão estratégica</span>
+              </h2>
+            </div>
+
+            <!-- GRID PRINCIPAL -->
+            <div class="about-grid">
+              <!-- COLUNA ESQUERDA -->
+              <div class="about-left">
+                <p>
+                  Desenvolvedor Frontend especializado em React e aplicações
+                  modernas. Trabalho com foco em escalabilidade, organização
+                  estrutural e experiência de usuário de alto nível.
+                </p>
+
+                <p>
+                  Minha abordagem une código limpo, arquitetura bem definida e
+                  mentalidade de produto — pensando sempre em crescimento,
+                  manutenção e performance real.
+                </p>
+
+                <!-- MÉTRICAS -->
+                <div class="about-metrics">
+                  <div>
+                    <strong>+12</strong>
+                    <span>Projetos entregues</span>
+                  </div>
+
+                  <div>
+                    <strong>2+ anos</strong>
+                    <span>Experiência prática</span>
+                  </div>
+
+                  <div>
+                    <strong>90+</strong>
+                    <span>Lighthouse Score</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- COLUNA DIREITA -->
+              <div class="about-right">
+                <!-- DIFERENCIAL -->
+                <div class="about-card">
+                  <h4>Diferencial competitivo</h4>
+                  <p>
+                    Foco em arquitetura escalável e organização estrutural. Não
+                    apenas desenvolvimento visual, mas estrutura preparada para
+                    crescer.
+                  </p>
+                </div>
+
+                <!-- COMO EU TRABALHO -->
+                <div class="about-card">
+                  <h4>Como eu trabalho</h4>
+                  <p>
+                    Componentização inteligente, separação de responsabilidades,
+                    boas práticas e otimização contínua.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- STACK VISUAL -->
+            <div class="about-stack">
+              <h3>Stack principal</h3>
+
+              <div class="stack-grid">
+                <div class="stack-item">⚛ React</div>
+                <div class="stack-item">▲ Next.js</div>
+                <div class="stack-item">🟦 TypeScript</div>
+                <div class="stack-item">🎨 UI Moderna</div>
+                <div class="stack-item">⚙ Arquitetura Frontend</div>
+                <div class="stack-item">🚀 Performance Web</div>
+              </div>
+            </div>
+
+            <!-- LINHA DO TEMPO -->
+            <div class="about-timeline">
+              <h3>Trajetória</h3>
+
+              <div class="timeline-item">
+                <span>2024 - Atual</span>
+                <p>
+                  Desenvolvimento de aplicações completas com foco em
+                  arquitetura moderna.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <span>2023</span>
+                <p>
+                  Transição para projetos mais estruturados e foco em
+                  performance.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <span>2022</span>
+                <p>Início da jornada em desenvolvimento frontend.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJETOS -->
+
+        <section id="projetos" class="projects">
+          <div class="projects-header">
+            <span class="section-badge">Projetos</span>
+            <h2>Projetos em <span>destaque</span></h2>
+          </div>
+
+          <!-- FILTROS -->
+          <div class="projects-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="react">React</button>
+            <button class="filter-btn" data-filter="next">Next.js</button>
+            <button class="filter-btn" data-filter="fullstack">
+              Fullstack
+            </button>
+          </div>
+
+          <!-- GRID -->
+          <div class="projects-grid">
+            <!-- 1 -->
+            <div class="project-card" data-category="react">
+              <div class="project-thumb">
+                <img src="assets/project1.png" alt="Projeto Petshop" />
+              </div>
+
+              <div class="project-content">
+                <h4>Petshop Online</h4>
+                <p>
+                  Sistema completo com catálogo, layout moderno e foco em
+                  conversão.
+                </p>
+
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Responsivo</span>
+                  <span>UI Moderna</span>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://seuprojeto.netlify.app"
+                    target="_blank"
+                    class="btn-live"
+                  >
+                    Ver Online
+                  </a>
+
+                  <a
+                    href="https://github.com/seuusuario/projeto"
+                    target="_blank"
+                    class="btn-github"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="project-card" data-category="next">
+              <div class="project-thumb">
+                <img src="assets/project2.png" alt="" />
+                <div class="project-overlay">
+                  <a href="#">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Landing Page Conversão</h4>
+                <p>Alta performance e SEO otimizado.</p>
+
+                <div class="project-tags">
+                  <span>Next.js</span>
+                  <span>SEO</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="project-card" data-category="fullstack">
+              <div class="project-thumb">
+                <img src="assets/project3.jpg" alt="" />
+                <div class="project-overlay">
+                  <a href="#">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Sistema de Agendamento</h4>
+                <p>Fullstack com autenticação e banco de dados.</p>
+
+                <div class="project-tags">
+                  <span>Node</span>
+                  <span>Prisma</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="project-card" data-category="react">
+              <div class="project-thumb">
+                <img src="assets/project4.jpg" alt="" />
+                <div class="project-overlay">
+                  <a href="#">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>CRM Dashboard</h4>
+                <p>Gestão de clientes e métricas.</p>
+
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>UX</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="project-card" data-category="next">
+              <div class="project-thumb">
+                <img src="assets/project5.jpg" alt="" />
+                <div class="project-overlay">
+                  <a href="#">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>E-commerce</h4>
+                <p>Loja moderna com checkout integrado.</p>
+
+                <div class="project-tags">
+                  <span>Next.js</span>
+                  <span>Stripe</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="project-card" data-category="react">
+              <div class="project-thumb">
+                <img src="assets/project6.jpg" alt="" />
+                <div class="project-overlay">
+                  <a href="#">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Admin Panel</h4>
+                <p>Painel administrativo modular.</p>
+
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Dashboard</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="project-card" data-category="fullstack">
+              <div class="project-thumb">
+                <img src="assets/project7.jpg" alt="" />
+                <div class="project-overlay">
+                  <a href="#">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Sistema Médico</h4>
+                <p>Gestão de pacientes e agenda.</p>
+
+                <div class="project-tags">
+                  <span>Fullstack</span>
+                  <span>Auth</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="project-card" data-category="react">
+              <div class="project-thumb">
+                <img src="assets/project8.jpg" alt="" />
+                <div class="project-overlay">
+                  <a href="#">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>Portfolio Premium</h4>
+                <p>Layout moderno com animações.</p>
+
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Animation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="project-card" data-category="next">
+              <div class="project-thumb">
+                <img src="assets/project9.jpg" alt="" />
+                <div class="project-overlay">
+                  <a href="#">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h4>SaaS Template</h4>
+                <p>Template escalável para startups.</p>
+                <div class="mini-chart">
+                  <span style="height: 50%"></span>
+                  <span style="height: 90%"></span>
+                  <span style="height: 70%"></span>
+                  <span style="height: 60%"></span>
+                  <span style="height: 95%"></span>
+                </div>
+                <div class="project-tags">
+                  <span>Next.js</span>
+                  <span>SaaS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTATO -->
+        <!-- CONTATO PREMIUM -->
+        <section id="contato" class="contact">
+          <div class="contact-wrapper">
+            <div class="contact-header">
+              <span class="section-badge">Contato</span>
+              <h2>Vamos construir algo <span>incrível juntos</span></h2>
+              <p>
+                Preencha o formulário abaixo e retornarei o mais breve possível.
+              </p>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+              <!-- NOME -->
+              <div class="form-group">
+                <label>Nome completo</label>
+                <input type="text" id="name" placeholder="Seu nome" required />
+                <small class="error-message"></small>
+              </div>
+
+              <!-- EMAIL -->
+              <div class="form-group">
+                <label>Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="seu@email.com"
+                  required
+                />
+                <small class="error-message"></small>
+              </div>
+
+              <!-- ASSUNTO -->
+              <div class="form-group">
+                <label>Assunto</label>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Sobre o que deseja falar?"
+                  required
+                />
+                <small class="error-message"></small>
+              </div>
+
+              <!-- MENSAGEM -->
+              <div class="form-group">
+                <label>Mensagem</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Digite sua mensagem..."
+                  required
+                ></textarea>
+                <small class="error-message"></small>
+              </div>
+
+              <button type="submit" class="btn-primary contact-btn">
+                Enviar mensagem
+              </button>
+
+              <div class="form-success"></div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
