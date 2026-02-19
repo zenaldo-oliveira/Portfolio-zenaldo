@@ -19,10 +19,15 @@
   <body>
     <div class="layout">
       <!-- ================= SIDEBAR ================= -->
-      <button class="menu-toggle" id="menuToggle">☰</button>
-      <div class="overlay" id="overlay"></div>
 
-      <aside class="sidebar">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="overlay" id="overlay"></div>
+      <aside class="sidebar" id="sidebar">
         <div class="sidebar-inner">
           <div class="sidebar-top">
             <img
@@ -132,7 +137,9 @@
               <span class="section-badge">Sobre mim</span>
               <h2>
                 Construindo produtos digitais com
-                <span>arquitetura, performance e visão estratégica</span>
+                <span class="gradient-text">
+                  arquitetura, performance e visão estratégica
+                </span>
               </h2>
             </div>
 
@@ -257,202 +264,498 @@
           <!-- GRID -->
           <div class="projects-grid">
             <!-- 1 -->
-            <div class="project-card" data-category="react">
+            <div class="project-card saas-card" data-category="next">
+              <!-- Thumbnail -->
               <div class="project-thumb">
-                <img src="assets/project1.png" alt="Projeto Petshop" />
+                <img
+                  src="assets/project2.png"
+                  alt="Dashboard SaaS desenvolvido em Next.js"
+                />
+
+                <span class="project-badge">Live</span>
+
+                <div class="project-overlay">
+                  <div class="project-actions">
+                    <a
+                      href="https://seusite.com"
+                      target="_blank"
+                      class="btn-live"
+                    >
+                      Ver Online
+                    </a>
+                    <a
+                      href="https://github.com/seuuser/projeto"
+                      target="_blank"
+                      class="btn-github"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </div>
               </div>
 
+              <!-- Content -->
               <div class="project-content">
-                <h4>Petshop Online</h4>
+                <h4>Converso de texto para voz</h4>
+
                 <p>
-                  Sistema completo com catálogo, layout moderno e foco em
-                  conversão.
+                  Plataforma SaaS com autenticação, dashboard interativo e
+                  arquitetura escalável baseada em SSR e API modular.
                 </p>
 
-                <div class="project-tags">
-                  <span>React</span>
-                  <span>Responsivo</span>
-                  <span>UI Moderna</span>
+                <!-- Highlight técnico -->
+                <div class="project-metric">
+                  🚀 Performance 96 • Arquitetura Escalável
                 </div>
 
-                <div class="project-links">
-                  <a
-                    href="https://seuprojeto.netlify.app"
-                    target="_blank"
-                    class="btn-live"
-                  >
-                    Ver Online
-                  </a>
-
-                  <a
-                    href="https://github.com/seuusuario/projeto"
-                    target="_blank"
-                    class="btn-github"
-                  >
-                    GitHub
-                  </a>
+                <!-- Stack -->
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>Auth</span>
                 </div>
               </div>
             </div>
 
-            <!-- 2 -->
-            <div class="project-card" data-category="next">
+            <!-- Projeto 2 -->
+            <div class="project-card saas-card" data-category="next">
+              <!-- Thumbnail -->
               <div class="project-thumb">
-                <img src="assets/project2.png" alt="" />
+                <img
+                  src="assets/project2.png"
+                  alt="Dashboard SaaS desenvolvido em Next.js"
+                />
+
+                <span class="project-badge">Live</span>
+
                 <div class="project-overlay">
-                  <a href="#">Ver Projeto</a>
+                  <div class="project-actions">
+                    <a
+                      href="https://seusite.com"
+                      target="_blank"
+                      class="btn-live"
+                    >
+                      Ver Online
+                    </a>
+                    <a
+                      href="https://github.com/seuuser/projeto"
+                      target="_blank"
+                      class="btn-github"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="project-content">
-                <h4>Landing Page Conversão</h4>
-                <p>Alta performance e SEO otimizado.</p>
 
-                <div class="project-tags">
+              <!-- Content -->
+              <div class="project-content">
+                <h4>Converso de texto para voz</h4>
+
+                <p>
+                  Plataforma SaaS com autenticação, dashboard interativo e
+                  arquitetura escalável baseada em SSR e API modular.
+                </p>
+
+                <!-- Highlight técnico -->
+                <div class="project-metric">
+                  🚀 Performance 96 • Arquitetura Escalável
+                </div>
+
+                <!-- Stack -->
+                <div class="project-stack">
                   <span>Next.js</span>
-                  <span>SEO</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>Auth</span>
                 </div>
               </div>
             </div>
 
             <!-- 3 -->
-            <div class="project-card" data-category="fullstack">
+            <div class="project-card saas-card" data-category="next">
+              <!-- Thumbnail -->
               <div class="project-thumb">
-                <img src="assets/project2.png" alt="" />
+                <img
+                  src="assets/project2.png"
+                  alt="Dashboard SaaS desenvolvido em Next.js"
+                />
+
+                <span class="project-badge">Live</span>
+
                 <div class="project-overlay">
-                  <a href="#">Ver Projeto</a>
+                  <div class="project-actions">
+                    <a
+                      href="https://seusite.com"
+                      target="_blank"
+                      class="btn-live"
+                    >
+                      Ver Online
+                    </a>
+                    <a
+                      href="https://github.com/seuuser/projeto"
+                      target="_blank"
+                      class="btn-github"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="project-content">
-                <h4>Sistema de Agendamento</h4>
-                <p>Fullstack com autenticação e banco de dados.</p>
 
-                <div class="project-tags">
-                  <span>Node</span>
+              <!-- Content -->
+              <div class="project-content">
+                <h4>Converso de texto para voz</h4>
+
+                <p>
+                  Plataforma SaaS com autenticação, dashboard interativo e
+                  arquitetura escalável baseada em SSR e API modular.
+                </p>
+
+                <!-- Highlight técnico -->
+                <div class="project-metric">
+                  🚀 Performance 96 • Arquitetura Escalável
+                </div>
+
+                <!-- Stack -->
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
                   <span>Prisma</span>
+                  <span>Auth</span>
                 </div>
               </div>
             </div>
 
             <!-- 4 -->
-            <div class="project-card" data-category="react">
+            <div class="project-card saas-card" data-category="next">
+              <!-- Thumbnail -->
               <div class="project-thumb">
-                <img src="assets/project1.png" alt="" />
+                <img
+                  src="assets/project2.png"
+                  alt="Dashboard SaaS desenvolvido em Next.js"
+                />
+
+                <span class="project-badge">Live</span>
+
                 <div class="project-overlay">
-                  <a href="#">Ver Projeto</a>
+                  <div class="project-actions">
+                    <a
+                      href="https://seusite.com"
+                      target="_blank"
+                      class="btn-live"
+                    >
+                      Ver Online
+                    </a>
+                    <a
+                      href="https://github.com/seuuser/projeto"
+                      target="_blank"
+                      class="btn-github"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="project-content">
-                <h4>CRM Dashboard</h4>
-                <p>Gestão de clientes e métricas.</p>
 
-                <div class="project-tags">
-                  <span>React</span>
-                  <span>UX</span>
+              <!-- Content -->
+              <div class="project-content">
+                <h4>Converso de texto para voz</h4>
+
+                <p>
+                  Plataforma SaaS com autenticação, dashboard interativo e
+                  arquitetura escalável baseada em SSR e API modular.
+                </p>
+
+                <!-- Highlight técnico -->
+                <div class="project-metric">
+                  🚀 Performance 96 • Arquitetura Escalável
+                </div>
+
+                <!-- Stack -->
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>Auth</span>
                 </div>
               </div>
             </div>
-
             <!-- 5 -->
-            <div class="project-card" data-category="next">
+            <div class="project-card saas-card" data-category="next">
+              <!-- Thumbnail -->
               <div class="project-thumb">
-                <img src="assets/project1.png" alt="" />
+                <img
+                  src="assets/project2.png"
+                  alt="Dashboard SaaS desenvolvido em Next.js"
+                />
+
+                <span class="project-badge">Live</span>
+
                 <div class="project-overlay">
-                  <a href="#">Ver Projeto</a>
+                  <div class="project-actions">
+                    <a
+                      href="https://seusite.com"
+                      target="_blank"
+                      class="btn-live"
+                    >
+                      Ver Online
+                    </a>
+                    <a
+                      href="https://github.com/seuuser/projeto"
+                      target="_blank"
+                      class="btn-github"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="project-content">
-                <h4>E-commerce</h4>
-                <p>Loja moderna com checkout integrado.</p>
 
-                <div class="project-tags">
+              <!-- Content -->
+              <div class="project-content">
+                <h4>Converso de texto para voz</h4>
+
+                <p>
+                  Plataforma SaaS com autenticação, dashboard interativo e
+                  arquitetura escalável baseada em SSR e API modular.
+                </p>
+
+                <!-- Highlight técnico -->
+                <div class="project-metric">
+                  🚀 Performance 96 • Arquitetura Escalável
+                </div>
+
+                <!-- Stack -->
+                <div class="project-stack">
                   <span>Next.js</span>
-                  <span>Stripe</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>Auth</span>
                 </div>
               </div>
             </div>
 
             <!-- 6 -->
-            <div class="project-card" data-category="react">
+            <div class="project-card saas-card" data-category="next">
+              <!-- Thumbnail -->
               <div class="project-thumb">
-                <img src="assets/project2.png" alt="" />
+                <img
+                  src="assets/project2.png"
+                  alt="Dashboard SaaS desenvolvido em Next.js"
+                />
+
+                <span class="project-badge">Live</span>
+
                 <div class="project-overlay">
-                  <a href="#">Ver Projeto</a>
+                  <div class="project-actions">
+                    <a
+                      href="https://seusite.com"
+                      target="_blank"
+                      class="btn-live"
+                    >
+                      Ver Online
+                    </a>
+                    <a
+                      href="https://github.com/seuuser/projeto"
+                      target="_blank"
+                      class="btn-github"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="project-content">
-                <h4>Admin Panel</h4>
-                <p>Painel administrativo modular.</p>
 
-                <div class="project-tags">
-                  <span>React</span>
-                  <span>Dashboard</span>
+              <!-- Content -->
+              <div class="project-content">
+                <h4>Converso de texto para voz</h4>
+
+                <p>
+                  Plataforma SaaS com autenticação, dashboard interativo e
+                  arquitetura escalável baseada em SSR e API modular.
+                </p>
+
+                <!-- Highlight técnico -->
+                <div class="project-metric">
+                  🚀 Performance 96 • Arquitetura Escalável
+                </div>
+
+                <!-- Stack -->
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>Auth</span>
                 </div>
               </div>
             </div>
 
             <!-- 7 -->
-            <div class="project-card" data-category="fullstack">
+            <div class="project-card saas-card" data-category="next">
+              <!-- Thumbnail -->
               <div class="project-thumb">
-                <img src="assets/project1.png" alt="" />
+                <img
+                  src="assets/project2.png"
+                  alt="Dashboard SaaS desenvolvido em Next.js"
+                />
+
+                <span class="project-badge">Live</span>
+
                 <div class="project-overlay">
-                  <a href="#">Ver Projeto</a>
+                  <div class="project-actions">
+                    <a
+                      href="https://seusite.com"
+                      target="_blank"
+                      class="btn-live"
+                    >
+                      Ver Online
+                    </a>
+                    <a
+                      href="https://github.com/seuuser/projeto"
+                      target="_blank"
+                      class="btn-github"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="project-content">
-                <h4>Sistema Médico</h4>
-                <p>Gestão de pacientes e agenda.</p>
 
-                <div class="project-tags">
-                  <span>Fullstack</span>
+              <!-- Content -->
+              <div class="project-content">
+                <h4>Converso de texto para voz</h4>
+
+                <p>
+                  Plataforma SaaS com autenticação, dashboard interativo e
+                  arquitetura escalável baseada em SSR e API modular.
+                </p>
+
+                <!-- Highlight técnico -->
+                <div class="project-metric">
+                  🚀 Performance 96 • Arquitetura Escalável
+                </div>
+
+                <!-- Stack -->
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
                   <span>Auth</span>
                 </div>
               </div>
             </div>
 
             <!-- 8 -->
-            <div class="project-card" data-category="react">
+            <div class="project-card saas-card" data-category="next">
+              <!-- Thumbnail -->
               <div class="project-thumb">
-                <img src="assets/project2.png" alt="" />
+                <img
+                  src="assets/project2.png"
+                  alt="Dashboard SaaS desenvolvido em Next.js"
+                />
+
+                <span class="project-badge">Live</span>
+
                 <div class="project-overlay">
-                  <a href="#">Ver Projeto</a>
+                  <div class="project-actions">
+                    <a
+                      href="https://seusite.com"
+                      target="_blank"
+                      class="btn-live"
+                    >
+                      Ver Online
+                    </a>
+                    <a
+                      href="https://github.com/seuuser/projeto"
+                      target="_blank"
+                      class="btn-github"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="project-content">
-                <h4>Portfolio Premium</h4>
-                <p>Layout moderno com animações.</p>
 
-                <div class="project-tags">
-                  <span>React</span>
-                  <span>Animation</span>
+              <!-- Content -->
+              <div class="project-content">
+                <h4>Converso de texto para voz</h4>
+
+                <p>
+                  Plataforma SaaS com autenticação, dashboard interativo e
+                  arquitetura escalável baseada em SSR e API modular.
+                </p>
+
+                <!-- Highlight técnico -->
+                <div class="project-metric">
+                  🚀 Performance 96 • Arquitetura Escalável
+                </div>
+
+                <!-- Stack -->
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>Auth</span>
                 </div>
               </div>
             </div>
 
             <!-- 9 -->
-            <div class="project-card" data-category="next">
+            <div class="project-card saas-card" data-category="next">
+              <!-- Thumbnail -->
               <div class="project-thumb">
-                <img src="assets/project2.png" alt="" />
+                <img
+                  src="assets/project2.png"
+                  alt="Dashboard SaaS desenvolvido em Next.js"
+                />
+
+                <span class="project-badge">Live</span>
+
                 <div class="project-overlay">
-                  <a href="#">Ver Projeto</a>
+                  <div class="project-actions">
+                    <a
+                      href="https://seusite.com"
+                      target="_blank"
+                      class="btn-live"
+                    >
+                      Ver Online
+                    </a>
+                    <a
+                      href="https://github.com/seuuser/projeto"
+                      target="_blank"
+                      class="btn-github"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
+
+              <!-- Content -->
               <div class="project-content">
-                <h4>SaaS Template</h4>
-                <p>Template escalável para startups.</p>
-                <div class="mini-chart">
-                  <span style="height: 50%"></span>
-                  <span style="height: 90%"></span>
-                  <span style="height: 70%"></span>
-                  <span style="height: 60%"></span>
-                  <span style="height: 95%"></span>
+                <h4>Converso de texto para voz</h4>
+
+                <p>
+                  Plataforma SaaS com autenticação, dashboard interativo e
+                  arquitetura escalável baseada em SSR e API modular.
+                </p>
+
+                <!-- Highlight técnico -->
+                <div class="project-metric">
+                  🚀 Performance 96 • Arquitetura Escalável
                 </div>
-                <div class="project-tags">
+
+                <!-- Stack -->
+                <div class="project-stack">
                   <span>Next.js</span>
-                  <span>SaaS</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>Auth</span>
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         <!-- CONTATO -->
